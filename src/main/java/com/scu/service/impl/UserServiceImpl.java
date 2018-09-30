@@ -3,6 +3,8 @@ package com.scu.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.scu.dao.UserDao;
+import com.scu.enums.ResultEnum;
+import com.scu.exception.UserException;
 import com.scu.model.UserDomain;
 import com.scu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,4 +39,14 @@ public class UserServiceImpl implements UserService{
         PageInfo result = new PageInfo(userDomainList);
         return result;
     }
+
+    @Override
+    public void testException(Integer id) throws Exception {
+        if(id<10){
+            throw new UserException(ResultEnum.ERROR);
+        }else{
+            throw new UserException(ResultEnum.SUCCESS);
+        }
+    }
+
 }

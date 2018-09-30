@@ -1,6 +1,7 @@
 package com.scu.service;
 
 import com.github.pagehelper.PageInfo;
+import com.scu.model.Result;
 import com.scu.model.UserDomain;
 
 /**
@@ -10,4 +11,7 @@ public interface UserService {
     int addUser(UserDomain user);
 
     PageInfo<UserDomain> findAllUser(int pageNum, int pageSize);
+
+    void testException(Integer id) throws Exception;
+
 }
