@@ -90,6 +90,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
+		<!--热部署，页面修改后会立即生效-->
+		<!--采用虚拟机机制，重启很快，只加载开发的class，不会重新加载第三方jar-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-devtools</artifactId>-->
+			<!--&lt;!&ndash;依赖不会传递&ndash;&gt;-->
+			<!--<optional>true</optional>-->
+		<!--</dependency>-->
+
+		<!--引入freemarker模板依赖-->
+		<!--jsp是在后端渲染页面，模板引擎可以在前端渲染页面，减轻服务器的压力-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
