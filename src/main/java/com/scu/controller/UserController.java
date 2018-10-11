@@ -5,7 +5,6 @@ import com.scu.model.UserDomain;
 import com.scu.service.UserService;
 import com.scu.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 

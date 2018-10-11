@@ -101,7 +101,6 @@
 		<!--</dependency>-->
 
 		<!--引入freemarker模板依赖-->
-		<!--jsp是在后端渲染页面，模板引擎可以在前端渲染页面，减轻服务器的压力-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
